@@ -1,11 +1,12 @@
-const name = "Marcin";
-
-if (name === "Marcin") {
-    console.log("Marciny są fajne");
-} else if (name === "Ania") {
-    console.log("Anie są fajne");
-} else if (name === "Radosław") {
-    console.log("Radki są fajne");
-} else {
-    console.log("Nie wiem kto jest fajny");
+const nr = 5;
+switch (nr) {
+    case (nr <= 5):
+        console.log("Mało");
+    break;
+    case (nr > 5 && nr <= 10):
+        console.log("Średnio");
+    break;
+    case (nr > 15) :
+        console.log("Dużo");
+    break;
 }

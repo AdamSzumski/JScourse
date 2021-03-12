@@ -2,8 +2,7 @@
 
 
 function sum (a, b){
-        sum = 5 + 5;
-    return sum;
+        return a + b;
 }
 
 // - przypisz wywołanie sum(5, 5) funkcji do zmiennej ten
@@ -14,6 +13,31 @@ function sum (a, b){
 
 // const sum = (2, 2);
 
-const guests =['jan', 'lolo', 'gg']
-const firstGuest = guests[0];
-console.log(secondGuest);
+
+const sum = function (a, b) {
+    return a + b;
+}
+const ten = sum(5, 5);
+const four = sum(2, 2);
+console.log(ten);
+console.log(four);
+const sum = sum(ten, four);
+console.log(sum);
+//Zadanie 2
+const getBiggerNumber = function (a, b) {
+    if (a > b) {
+        return a;
+    }
+    return b;
+}
+const result = getBiggerNumber(2000, 100);
+console.log(result);
+//Zadanie 3
+const isEqual = function (x, y) {
+    if (x === y) {
+        return true;
+    }
+    return false;
+}
+const checkIfEqual = isEqual(2, 3);
+console.log(checkIfEqual);

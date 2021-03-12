@@ -68,12 +68,12 @@ console.log(checkIfEqual);
 const getArrayLength=[1,2,3];
 console.log (getArrayLength [2]);
 
-// Dla wywołania getArrayLength([]) zwraca 0
+// Dla wywołania getArrayLength([]) zwraca 0 (nie wychodzi)
 
-// const getArrayLength=[];
+// const getArrayLength=[]; 
 // console.log (getArrayLength []);
 
-// // Dla wywołania getArrayLength([1,2,3,4,5]) zwraca liczbę 5
-const getArrayLength=[1,2,3,4,5];
-console.log (getArrayLength [4]);
+// // Dla wywołania getArrayLength([1,2,3,4,5]) zwraca liczbę 5 (nie wychodzi)
+// const getArrayLength=[1, 2, 3, 4, 5]; 
+// console.log (getArrayLength[4]);
 

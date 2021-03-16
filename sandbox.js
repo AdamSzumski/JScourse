@@ -78,10 +78,14 @@ console.log (getArrayLength [2]);
 // console.log (getArrayLength[4]);
 
 
-const fruits=['Apple', 'Banana'];
 
-console.log(fruits);
+console.log(x);
 
-const first = fruits[0];
-//  console.log()
-//  const last = fruits[fruits.lenght -1];
+var x = 1;
+
+var y = 1;
+if (true){
+    var y = 5;
+}
+console.log(y);
+

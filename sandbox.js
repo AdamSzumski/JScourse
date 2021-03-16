@@ -14,16 +14,16 @@
 // const sum = (2, 2);
 
 
-const sum = function (a, b) {
-    return a + b;
-}
-const ten = sum(5, 5);
-const four = sum(2, 2);
-console.log(ten);
+// const sum = function (a, b) {
+//     return a + b;
+// }
+// const ten = sum(5, 5);
+// const four = sum(2, 2);
+// console.log(ten);
 
-console.log(four);
-const suma = sum(ten, four);
-console.log(suma);
+// console.log(four);
+// const suma = sum(ten, four);
+// console.log(suma);
 
 
 //Zadanie 2
@@ -116,10 +116,41 @@ console.log(car.model);
 
 const sayHello = function(name) {
     console.log("czesc mam na imie " + name);
-    // console.log('1');
+   
+
 }
-console.log(sayHello);
+
+console.log(sayHello('1'));
+
+
             // sayHello("Maciej");
             // sayHello("Mmichal");
             // sayHello("Mdfdj");
             // sayHello("Mhthrtej");
+
+        //      const sum = (a, b) => {
+        //         return a + b;
+        //     }
+            
+        //     const sum1 = function (a, b){
+            
+        //     return a + b;
+        //     }
+
+        //    console.log(sum(2,2));
+
+
+         const number = 2;
+
+        if (number === 1) {
+            console.log("licxzba pierwsza")
+        }
+
+        if (number === 1) {
+            console.log ("piekna liczba")
+        }
+
+if (number === 1) {
+    console.log("magiczna liczna")
+}
+console.log(error);

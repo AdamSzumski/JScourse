@@ -79,13 +79,47 @@ console.log (getArrayLength [2]);
 
 
 
-console.log(x);
+// console.log(x);
 
-var x = 1;
+// var x = 1;
 
-var y = 1;
-if (true){
-    var y = 5;
+// var y = 1;
+// if (true){
+//     var y = 5;
+// }
+// console.log(y);
+
+const arr = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+console.log(arr);
+for(let i =0; i < arr.lenght; i++){
+console.log('ggg: ' + i);
+console.log('ffff: ' + arr[i]);
 }
-console.log(y);
 
+const car = {
+    model: 'm3',
+    doors: 5,
+    hp: 400,
+
+
+print: function() {
+    console.log("to jset auto: " + this.model + " i ma drzwi: " + this.doors)
+
+}
+}
+console.log(car.print());
+
+
+const doorCount = car.doors;
+console.log(car.model);
+
+const sayHello = function(name) {
+    console.log("czesc mam na imie " + name);
+    // console.log('1');
+}
+console.log(sayHello);
+            // sayHello("Maciej");
+            // sayHello("Mmichal");
+            // sayHello("Mdfdj");
+            // sayHello("Mhthrtej");

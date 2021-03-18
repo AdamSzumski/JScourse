@@ -175,20 +175,24 @@
 
 // console.log(amIAdult)
 
-const fruits=['banana', 'strawberry', 'kiwi'];
-console.log(fruits[0]);
-console.log(fruits[fruits.length - 1]);
-for (let i=0; i < fruits.length; i++) {
-console.log(fruits[i]);
+// const fruits=['banana', 'strawberry', 'kiwi'];
+// console.log(fruits[0]);
+// console.log(fruits[fruits.length - 1]);
+// for (let i=0; i < fruits.length; i++) {
+// console.log(fruits[i]);
+// }
+
+
+// function printArrayElements(arr) {
+//     for (let i = 0; i < printArrayElements; i++){
+//         console.log(arr[i]);
+
+//     }
+// }
+
+const names = ["Dominik", "andrzej", "Jan"];
+const arr = names.forEach(function(el, i, arr){
+    console.log(el, i, arr);
 }
-
-
-function printArrayElements(arr) {
-    for (let i = 0; i < printArrayElements; i++){
-        console.log(arr[i]);
-
-    }
-}
-
-const nums = [2, 3, 4, 1, 5, 10];
+)
 

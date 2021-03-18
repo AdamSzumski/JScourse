@@ -155,22 +155,40 @@
 // // }
 // // console.log(error);
 
-const person = {
-    name: "Maciek",
-    age: 16,
+// const person = {
+//     name: "Maciek",
+//     age: 16,
+// }
+
+// const isAdultPerson = function(personParameter){
+//     console.log(personParameter)
+
+// if(personParameter.age >= 18){
+//     return "Person is adult";
+// }
+
+// return "Person is not adult";
+// }
+// isAdultPerson(person);
+
+// const amIAdult = isAdultPerson(person);
+
+// console.log(amIAdult)
+
+const fruits=['banana', 'strawberry', 'kiwi'];
+console.log(fruits[0]);
+console.log(fruits[fruits.length - 1]);
+for (let i=0; i < fruits.length; i++) {
+console.log(fruits[i]);
 }
 
-const isAdultPerson = function(personParameter){
-    console.log(personParameter)
 
-if(personParameter.age >= 18){
-    return "Person is adult";
+function printArrayElements(arr) {
+    for (let i = 0; i < printArrayElements; i++){
+        console.log(arr[i]);
+
+    }
 }
 
-return "Person is not adult";
-}
-isAdultPerson(person);
+const nums = [2, 3, 4, 1, 5, 10];
 
-const amIAdult = isAdultPerson(person);
-
-console.log(amIAdult)

@@ -274,37 +274,43 @@
 //     zwierzak:   ${tab[0][3]}
 // `);
 
-const level = [
-    [1, 1, 0, 0, 2, 2, 0, 0, 1, 1],
-    [1, 0, 0, 0, 2, 2, 0, 0, 0, 1],
-    [1, 0, 1, 1, 2, 2, 1, 1, 0, 1],
-    [1, 0, 2, 2, 2, 2, 2, 2, 0, 1],
-    [2, 2, 2, 2, 1, 1, 2, 2, 2, 2],
-    [2, 2, 2, 2, 1, 1, 2, 2, 2, 2],
-    [1, 0, 2, 2, 2, 2, 2, 2, 0, 1],
-    [1, 0, 1, 1, 2, 2, 1, 1, 0, 1],
-    [1, 0, 0, 0, 2, 2, 0, 0, 0, 1],
-    [1, 1, 0, 0, 2, 2, 0, 0, 1, 1]
-];
-let str = "";
+// const level = [
+//     [1, 1, 0, 0, 2, 2, 0, 0, 1, 1],
+//     [1, 0, 0, 0, 2, 2, 0, 0, 0, 1],
+//     [1, 0, 1, 1, 2, 2, 1, 1, 0, 1],
+//     [1, 0, 2, 2, 2, 2, 2, 2, 0, 1],
+//     [2, 2, 2, 2, 1, 1, 2, 2, 2, 2],
+//     [2, 2, 2, 2, 1, 1, 2, 2, 2, 2],
+//     [1, 0, 2, 2, 2, 2, 2, 2, 0, 1],
+//     [1, 0, 1, 1, 2, 2, 1, 1, 0, 1],
+//     [1, 0, 0, 0, 2, 2, 0, 0, 0, 1],
+//     [1, 1, 0, 0, 2, 2, 0, 0, 1, 1]
+// ];
+// let str = "";
 
-for (const subTab of level) {
-    //pod subTab mamy każdą kolejną podtablicę
+// for (const subTab of level) {
+//     //pod subTab mamy każdą kolejną podtablicę
 
-    for (const el of subTab) {
-        switch (el) {
-            case 0 : str += "🟩"; break;
-            case 1 : str += "🟫"; break;
-            case 2 : str += "⬛"; break;
-        }
-    }
+//     for (const el of subTab) {
+//         switch (el) {
+//             case 0 : str += "🟩"; break;
+//             case 1 : str += "🟫"; break;
+//             case 2 : str += "⬛"; break;
+//         }
+//     }
 
-    str += "\n";
-}
+//     str += "\n";
+// }
 
-console.log(str);
-
-
+// console.log(str);
 
 
+// function dupa(name = "Michał", status = "najlepszy") {
+//     console.log(name + " jest " + status);
+// }
 
+// dupa();
+// dupa("karol")
+
+const tabUsers = ["ala", "bala", "cala"];
+tabUsers.forEach(elu => console.log(elu.toUpperCase()) );

@@ -190,9 +190,47 @@
 //     }
 // }
 
-const names = ["Dominik", "andrzej", "Jan"];
-const arr = names.forEach(function(el, i, arr){
-    console.log(el, i, arr);
-}
-)
+// const names = ["Dominik", "andrzej", "Jan"];
+// const arr = names.forEach(function(el, i, arr){
+//     console.log(el, i, arr);
+// }
+// )
+
+
+// const tab = ["Marcin", "Ania", "Agnieszka"];
+// tab.push ("adam");
+// console.log(tab);
+// tab[3] = "robert";
+// console.log(tab)
+// const cars = ["Mercedes", "Audi", "BMW"];
+// console.log(cars.join("").length);
+// const adam = "kartofel";
+// const tab = [...adam];
+// console.log(tab);
+// const tab = ["Agnieszka", "Marcin", "Ania", "Agnieszka", "Monika"];
+// const index = tab.lastIndexOf("Agnieszka");
+
+// if (index !== -1) {
+//     console.log("Ostatnie wystąpienie w tablicy to", index);
+// }
+// const tab1 = ["Ala", "Basia"];
+// const tab2 = ["Piotr", "Marcin"];
+// console.log(tab1 + tab2);
+
+const anim1 = ["Pies", "Kot"];
+const anim2 = ["Słoń", "Wieloryb"];
+const anim3 = ["Chomik ninja", "Świnka morderca"];
+const table = anim1.concat(anim2);
+console.log(table);
+const tableBig = anim1.concat(anim2, anim3);
+console.log(tableBig);
+
+
+
+
+
+
+
+
+
 

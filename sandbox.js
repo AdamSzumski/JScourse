@@ -217,18 +217,92 @@
 // const tab2 = ["Piotr", "Marcin"];
 // console.log(tab1 + tab2);
 
-const anim1 = ["Pies", "Kot"];
-const anim2 = ["Słoń", "Wieloryb"];
-const anim3 = ["Chomik ninja", "Świnka morderca"];
-const table = anim1.concat(anim2);
-console.log(table);
-const tableBig = anim1.concat(anim2, anim3);
-console.log(tableBig);
+// const anim1 = ["Pies", "Kot"];
+// const anim2 = ["Słoń", "Wieloryb"];
+// const anim3 = ["Chomik ninja", "Świnka morderca"];
+// const table = anim1.concat(anim2);
+// console.log(table);
+// const tableBig = anim1.concat(anim2, anim3);
+// console.log(tableBig);
+// const anim1 = ["Pies", "Kot"];
+// const anim2 = ["Słoń", "Wieloryb"];
+// const table = [...anim1, ...anim2];
+// console.log(table)
+// const tab = ["Marcin", "Ania", "Agnieszka", "Monika", 'magda'];
 
+// const tab2 = tab.slice(0, 1);
+// console.log(tab2)
+// console.log(tab)
+// const tab3 = tab.slice(2)
+// console.log(tab3)
+// const tab4 = tab.slice(1,3)
+// console.log(tab4)
+// tab.splice(2, 3);
+// console.log(tab);
 
+// const tab = new Array(20);
+// console.log(tab);
+// tab.fill("kot")
+// console.log(tab)
+// console.log("co" + tab.join(""))
 
+// const tab2 = [];
+// tab2.length = 15;
+// console.log(tab2);
+// tab2.fill("kot", 2, 5);
+// console.log(tab2);
+// const tab3 = [1, 2, 3, 4, 5];
+// tab3.fill("pies", 2, 4);
+// console.log(tab3);
 
+// const tab = ["Marcin", "Ania", "Agnieszka"];
+// for (let i=0; i<tab.length; i++){
+//     console.log("licznik pętli: " + i);
+//     console.log(tab[1]);
+// }
 
+// const tab = [
+//     ["Marcin", 183, "red", "kot"],
+//     ["Ania", 173, "blue", "pies"],
+//     ["Agnieszka", 170, "yellow", "świnka"]
+// ]
+
+// console.log(`
+//     imię:       ${tab[0][0]}
+//     wzrost:     ${tab[0][1]}
+//     kolor:      ${tab[0][2]}
+//     zwierzak:   ${tab[0][3]}
+// `);
+
+const level = [
+    [1, 1, 0, 0, 2, 2, 0, 0, 1, 1],
+    [1, 0, 0, 0, 2, 2, 0, 0, 0, 1],
+    [1, 0, 1, 1, 2, 2, 1, 1, 0, 1],
+    [1, 0, 2, 2, 2, 2, 2, 2, 0, 1],
+    [2, 2, 2, 2, 1, 1, 2, 2, 2, 2],
+    [2, 2, 2, 2, 1, 1, 2, 2, 2, 2],
+    [1, 0, 2, 2, 2, 2, 2, 2, 0, 1],
+    [1, 0, 1, 1, 2, 2, 1, 1, 0, 1],
+    [1, 0, 0, 0, 2, 2, 0, 0, 0, 1],
+    [1, 1, 0, 0, 2, 2, 0, 0, 1, 1]
+];
+let str = "";
+
+for (const subTab of level) {
+    //pod subTab mamy każdą kolejną podtablicę
+
+    for (const el of subTab) {
+        switch (el) {
+            case 0 : str += "🟩"; break;
+            case 1 : str += "🟫"; break;
+            case 2 : str += "⬛"; break;
+        }
+    }
+
+    str += "\n";
+}
+
+console.log(str);
 
 
 

@@ -312,5 +312,36 @@
 // dupa();
 // dupa("karol")
 
-const tabUsers = ["ala", "bala", "cala"];
-tabUsers.forEach(elu => console.log(elu.toUpperCase()) );
+// const tabUsers = ["ala", "bala", "cala"];
+// tabUsers.forEach(el => console.log(el.toUpperCase()) );
+
+// const tab = ["Marcin", "Ania", "Agnieszka", "Piotrek", "Grześ", "Magda"];
+
+// for (let i=0; i < tab.length; i++){
+//     console.log(tab[i]);
+// }
+
+const tab = ["Marcin", "Ania", , "Agnieszka"];
+
+//pod zmienną el trafią kolejne elementy
+tab.forEach(el => {
+    console.log(el.toUpperCase());
+});
+tab.forEach(() => {
+    //wykonam się tyle razy co liczba elementów
+    console.log("Lubię placki");
+});
+
+tab.forEach((el, i) => {
+    console.log(`Aktualny element to ${el}, a jego indeks to ${i}`);
+});
+
+tab.forEach((el, i, arr) => {
+    console.log(`Indeks elementu to ${i}, a długość tablicy to ${arr.length}`);
+});
+
+function printDetails(el, i, arr) {
+    console.log(el, i, arr);
+}
+
+tab.forEach(printDetails);

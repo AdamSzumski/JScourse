@@ -321,27 +321,142 @@
 //     console.log(tab[i]);
 // }
 
-const tab = ["Marcin", "Ania", , "Agnieszka"];
+// const tab = ["Marcin", "Ania", , "Agnieszka"];
 
-//pod zmienną el trafią kolejne elementy
-tab.forEach(el => {
-    console.log(el.toUpperCase());
-});
-tab.forEach(() => {
-    //wykonam się tyle razy co liczba elementów
-    console.log("Lubię placki");
-});
+// //pod zmienną el trafią kolejne elementy
+// tab.forEach(el => {
+//     console.log(el.toUpperCase());
+// });
+// tab.forEach(() => {
+//     //wykonam się tyle razy co liczba elementów
+//     console.log("Lubię placki");
+// });
 
-tab.forEach((el, i) => {
-    console.log(`Aktualny element to ${el}, a jego indeks to ${i}`);
-});
+// tab.forEach((el, i) => {
+//     console.log(`Aktualny element to ${el}, a jego indeks to ${i}`);
+// });
 
-tab.forEach((el, i, arr) => {
-    console.log(`Indeks elementu to ${i}, a długość tablicy to ${arr.length}`);
-});
+// tab.forEach((el, i, arr) => {
+//     console.log(`Indeks elementu to ${i}, a długość tablicy to ${arr.length}`);
+// });
 
-function printDetails(el, i, arr) {
-    console.log(el, i, arr);
-}
+// function printDetails(el, i, arr) {
+//     console.log(el, i, arr);
+// }
 
-tab.forEach(printDetails);
+// tab.forEach(printDetails);
+
+// const ob = {
+//     name: "Marcin"
+// };
+// tab.forEach(function(){
+// console.log(this);
+// });
+// tab.forEach(function(){
+
+// }, ob);
+
+// const tab = [1, 3, 5, 8, 9];
+// const allEven = tab.every(el => el % 2 === 0);
+// console.log(allEven);
+
+// const tab = [
+//     {name: "piotr", age: 18},
+//     {name: "ania", age: 15},
+//     {name: "monika", age: 16},
+//     ];
+//     const allAdult = tab.every(el => el.age >= 18);
+//     console.log(allAdult);
+
+// zad. 9
+    // const family = [
+    //     { name: "Wes", year: 1988 },
+    //     { name: "Kait", year: 1986 },
+    //     { name: "Irv", year: 1970 },
+    //     { name: "Lux", year: 2015 },
+    //   ];
+//       const personAtLeast19 = family.every(el => el.age = 2002);
+//       console.log( personAtLeast19);
+
+//       console.log( family.some(el => el.age < 2002));
+
+
+// const tab = ["Marcin", "Ania", "Agnieszka"];
+
+// const tab2 = tab.map(el => el.toUpperCase())
+// console.log(tab);
+// console.log(tab2);
+
+// const tab = [1, 2, 3];
+// const tab2 = tab.map(el => el*2);
+// console.log(tab2);
+
+// const numbers = [1.2, 4.5, 9.3];
+// const tab2 = numbers.map(el => Math.ceil(el));
+// console.log(tab2);
+
+// function multiple3(number) {
+//     return number * 3;
+// }
+
+// const ourTable = [1, 2, 3];
+
+// const tab = [1, 2, 3, 4, 5, 6];
+// const evenNumbers = tab.filter(el => el % 2 === 0);
+// console.log(evenNumbers);
+
+// const tab = ["Marcin", "Ania", "Agnieszka", "Monika", "Piotrek"];
+// const woman = tab.filter(name => name.startsWith("A"));
+// console.log(woman);
+
+// const tab = [
+//     { name : "Piotr", age: 18 },
+//     { name : "Ania", age: 15 },
+//     { name : "Monika", age: 16 },
+//     { name : "Andrzej", age: 20 },
+// ];
+
+// const adultUSers = tab.filter(user => user.age <= 18);
+// console.log(adultUSers);
+
+// const tab = [1, 2, 3, 4];
+// const result = tab.reduce((prev, curr) => prev + curr);
+
+// const tab = [3, 2, 4, 2];
+
+// const result = tab.reduce((a, b) => a * b);
+
+// const tab = [3, 2, 4, 2];
+// let sum = 0;
+// for (let i = 0; i<tab.length; i++){
+//     sum += tab[i];
+// }
+// console.log(tab)
+
+// const sum = [1, 2, 3].reduce((a, b) => a + b, 0);
+// console.log(sum)
+
+// const sum2 = [1, 2, 3].reduce((a, b) => a + b, "");
+// console.log(sum2)
+
+// const data = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+// const flatArray = data.reduce((total, amount) => total.concat(amount), []);
+// console.log(flatArray)
+
+// Zad. 9
+// const comments = [
+//     { text: "Love this!", id: 523423 },
+//     { text: "Super good", id: 823423 },
+//     { text: "You are the best", id: 2039842 },
+//     { text: "Ramen is my fav food ever", id: 123523 },
+//     { text: "Nice Nice Nice!", id: 542328 },
+//   ];
+
+// // const findComment = comments.find(el => el.id === 823423);
+// // console.log(findComment);
+
+// const index = comments.findIndex(el => el.id === 823423)
+// comments.splice(index, 1);
+// console.log(comments)
+

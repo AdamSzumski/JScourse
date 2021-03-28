@@ -444,6 +444,20 @@
 // const flatArray = data.reduce((total, amount) => total.concat(amount), []);
 // console.log(flatArray)
 
+
+// zad. 9
+    // const family = [
+    //     { name: "Wes", year: 1988 },
+    //     { name: "Kait", year: 1986 },
+    //     { name: "Irv", year: 1970 },
+    //     { name: "Lux", year: 2015 },
+    //   ];
+//       const personAtLeast19 = family.every(el => el.age = 2002);
+//       console.log( personAtLeast19);
+
+//       console.log( family.some(el => el.age < 2002));
+
+
 // Zad. 9
 // const comments = [
 //     { text: "Love this!", id: 523423 },
@@ -460,3 +474,61 @@
 // comments.splice(index, 1);
 // console.log(comments)
 
+// const tab = [
+//     { name : "Karol", age: 10 },
+//     { name : "Beata", age: 13 },
+//     { name : "Marcin", age: 18 },
+//     { name : "Ania", age: 20 }
+// ];
+// const findUser = tab.find(el => el.age >= 18);
+// console.log(findUser)
+
+// const tab = [12, 5, 8, 130, 44];
+// const bigNr = tab.find(el => el >= 15);
+// console.log(bigNr);
+
+// FINDINDEX
+
+// const tab = [
+//     { name : "Monika", gender: "w" },
+//     { name : "Agata", gender: "w" },
+//     { name : "Marcin", gender: "m" },
+//     { name : "Patrycja", gender: "w" }
+// ]
+
+// const index = tab.findIndex(el => el.gender === "m");
+// console.log("index pierwszego pasującego elementu:", index)
+// // console.log("PAsujący element:", tab[index]);
+
+// const text = "Ala ma kota";
+
+// text.toUpperCase()
+// .substr(0, 3)
+// .length
+// console.log(text)
+
+// const dog = {
+//     name: "Szama",
+//     speed: 1000,
+//     showText() {
+//         return "Lubię walczyć ze złem";
+//     }
+// }
+// dog.name;
+// console.log(name);
+
+// const tab = ["Ala", "Ola", "Ela", "Fela"];
+// const [a, b] = tab;
+// console.log(a, b)
+
+// const [name1, name2, name4] = tab;
+// console.log(name1, name2, name4);
+
+// const buttons = document.querySelectorAll(".button");
+
+// for (const btn of buttons) {
+//     console.log(btn);
+// }
+
+const element = document.querySelector("div");
+element.style.color = "red";

@@ -530,5 +530,41 @@
 //     console.log(btn);
 // }
 
-const element = document.querySelector("div");
-element.style.color = "red";
+// const parent = document.querySelector(".test");
+// const span1 = parent.querySelectorAll("span");
+// const span2 = parent.getElementsByTagName("span");
+
+// console.log("querySelectorAll: ", span1);
+// console.log("getElementsByTagName: ", span2);
+
+// const btn = document.querySelector(".btn");
+// console.log( btn.innerHTML ); 
+// {/* <span>Kliknij mnie</span> */}
+
+// btn.innerHTML = "<span>Nie klikaj mnie!</span>"
+
+// const btn = document.querySelector(".button");
+
+// btn.addEventListener("click", () => {
+//     document.querySelector(".test-cnt").innerHTML = `
+//         <div class="module">
+//             <h2>Przykładowy tytuł</h2>
+//             <p>To jest <strong>dynamicznie wstawiony html</strong></p>
+//             <button class="button">klik</button>
+//         </div>
+//     `;
+// });
+
+
+const btn = document.querySelector("button");
+const input = document.querySelector("input");
+
+btn.addEventListener("click", e => {
+    input.toggleAttribute("readonly");
+
+    if (input.hasAttribute("readonly")) {
+        btn.innerText = "zakończ";
+    } else {
+        btn.innerText = "edytuj";
+    }
+})

@@ -556,15 +556,78 @@
 // });
 
 
-const btn = document.querySelector("button");
-const input = document.querySelector("input");
+// const btn = document.querySelector("button");
+// const input = document.querySelector("input");
 
-btn.addEventListener("click", e => {
-    input.toggleAttribute("readonly");
+// btn.addEventListener("click", e => {
+//     input.toggleAttribute("readonly");
 
-    if (input.hasAttribute("readonly")) {
-        btn.innerText = "zakończ";
-    } else {
-        btn.innerText = "edytuj";
+//     if (input.hasAttribute("readonly")) {
+//         btn.innerText = "zakończ";
+//     } else {
+//         btn.innerText = "edytuj";
+//     }
+// })
+
+// const map = new Map();
+
+// map.set("kolor1", "red");
+// map.set("kolor2", "blue");
+// map.set("kolor3", "yellow");
+
+// console.log(map.get("kolor1"));
+// console.log(map.delete("kolor2"));
+// console.log(map.keys());
+
+// const sentence = 'The quick brown fox jumps over the lazy dog.';
+// const word = ('fox');
+// console.log(`The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence`);
+
+// const object1 = {
+//     a: "string",
+//     b: 42,
+//     c: false
+// };
+// console.log(O bject.keys(object1));
+
+// function printArrayElements(arr) {
+// for (let i = 0; i < arr.length; i++){
+// console.log(arr[i]);
+// }
+// }
+// printArrayElements([1, "Dominik", 2, true, null]);
+
+// const names = ["Dominik", "Andrzej", "Jan"];
+// const arr = names.forEach(el, i, arr) => {
+//     console.log(el, i, arr);
+// });
+
+// const timeoutID;
+// function delayedAlert() {
+//     timeoutID = window.setTimeout(window.alert, 2*1000, "bla bla bla");
+// }
+// function clearAlert(){
+//     window.clearTimeout(timeoutID);
+// }
+
+var alarm = {
+    remind: function(aMessage) {
+      alert(aMessage);
+      this.timeoutID = undefined;
+    },
+  
+    setup: function() {
+      if (typeof this.timeoutID === 'number') {
+        this.cancel();
+      }
+  
+      this.timeoutID = window.setTimeout(function(msg) {
+        this.remind(msg);
+      }.bind(this), 1000, 'Wake up!');
+    },
+  
+    cancel: function() {
+      window.clearTimeout(this.timeoutID);
     }
-})
+  };
+  window.onclick = function() { alarm.setup(); };
